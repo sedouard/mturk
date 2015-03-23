@@ -1081,6 +1081,8 @@ module.exports = function(settings) {
       params[str+'.Name'] = name;
       params[str+'.Value'] = params.HITLayoutParameters[name];
     }
+    //now remove this as we don't need it anymore
+    delete params.HITLayoutParameters;
     return params;
   }
 
